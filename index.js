@@ -4,7 +4,7 @@ console.log("creato indexjs");
 const app = express();
 
 //middleware prende nome cartella per convenzione public
-app.use(express.static('public'));
+app.use('/public', express.static('public'));
 
 app.get("/", (request, response) => {
     response.send("server del mio blog");
