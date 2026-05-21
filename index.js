@@ -46,7 +46,7 @@ const post = [
         tags: ["tag0", "tag1", "tag2"]
     }
 ];
-
+// punto 3 collegare con bacheca oggetto json che ci da il post su 
 app.get('/bacheca', (request, response) => {
     response.json(post);
 });
